@@ -1,0 +1,242 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Auto Potal</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Learn Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+ <link href="<?php echo base_url('css/bootstrap.min.css'); ?>" rel="stylesheet" type="text/css"/>
+<!--<link href="css/bootstrap-3.1.1.min.css" rel='stylesheet' type='text/css' />-->
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="<?php echo base_url('js/jquery.min.js'); ?>"></script>
+
+<script src="<?php echo base_url('js/bootstrap.min.js'); ?>"></script>
+<!-- Custom Theme files -->
+<link href="<?php echo base_url('css/style.css');?>" rel='stylesheet' type='text/css' />
+<link rel="stylesheet" href="<?php echo base_url('css/jquery.countdown.css');?>" />
+
+<!----font-Awesome----->
+<link href="<?php echo base_url('css/font-awesome.css');?>" rel="stylesheet"> 
+<!----font-Awesome----->
+<script>
+$(document).ready(function(){
+    $(".dropdown").hover(            
+        function() {
+            $('.dropdown-menu', this).stop( true, true ).slideDown("fast");
+            $(this).toggleClass('open');        
+        },
+        function() {
+            $('.dropdown-menu', this).stop( true, true ).slideUp("fast");
+            $(this).toggleClass('open');       
+        }
+    );
+});
+</script>
+
+<!-----------------slider script----------------------->
+<script src="<?php echo base_url('js/responsiveslides.min.js
+
+
+
+');?>"></script>
+					 <script>
+						// You can also use "$(window).load(function() {"
+						$(function () {
+						  // Slideshow 4
+						  $("#slider3").responsiveSlides({
+							auto: true,
+							pager: true,
+							nav: true,
+							speed: 500,
+							namespace: "callbacks",
+							before: function () {
+							  $('.events').append("<li>before event fired.</li>");
+							},
+							after: function () {
+							  $('.events').append("<li>after event fired.</li>");
+							}
+						  });
+					
+						});
+					  </script>
+ 
+</head>
+<body>
+<nav class="navbar navbar-default" role="navigation">
+	<div class="container">
+	    <div class="navbar-header">
+	        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+	        </button>
+	        <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="" class="img-responsive"></a>
+	    </div>
+	    <!--/.navbar-header-->
+	    <div class="navbar-collapse collapse" id="bs-example-navbar-collapse-1" style="height: 1px;">
+	        <ul class="nav navbar-nav nav_1">
+            <li><a href="#">Guides</a></li>
+            <li><a href="#">Troubleshooting</a></li>
+			<li><a href="#">Ask CarXperts</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Get Estimate<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">Terms of use</a></li>
+                <li><a href="#">Shortcodes</a></li>
+                <li><a href="#">Faq</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Find Workshop</a></li>
+            <li><a href="#">Auto News</a></li>
+            <li><a href="#">eStore</a></li>
+           </ul>
+	    </div>
+	    <div class="clearfix"> </div>
+	  </div>
+	    <!--/.navbar-collapse-->
+</nav>
+<!-- banner -->
+	
+    
+    </div>
+    <div class="userbanner">
+	</div>
+    
+    <div  class="myaccout"> <h1 style="float:left">My Account</h1>
+    <ol class="breadcrumb myac">
+    <li><a href="#">Home</a></li>
+    <li class="active">My Account</li>        
+  	</ol>
+  	</div>
+	<!-- //banner -->
+    <div class="container">
+    <div class="col-lg-12"><br>
+    <h1>Register your details</h1>
+    <p>Creating a My Account profile is easy. Simply enter your details below to receive great benefits including vehicle maintenance reminders and our quick booking tool that will make caring for your vehicle a breeze.</p>
+    <p>Please note, all fields are required.</p>
+    <br>
+    <h3>Login Details</h3>
+    <hr>
+    <form class="form-horizontal" role="form">
+    <div class="form-group">
+      <label class="col-sm-2 control-label">Forename</label>
+      <div class="col-sm-10">
+        <input class="form-control" id="forename" type="text" placeholder="Enter Forename...">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="col-sm-2 control-label">Email</label>
+      <div class="col-sm-10">
+        <input class="form-control" id="email" type="text" placeholder="Enter Email...">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="col-sm-2 control-label">Password</label>
+      <div class="col-sm-10">
+        <input class="form-control" id="Password" type="text" placeholder="Enter Password...">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="col-sm-2 control-label">Confirm</label>
+      <div class="col-sm-10">
+        <input class="form-control" id="Password" type="text" placeholder="Confirm your password...">
+      </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-12" align="center">
+        <input type="checkbox"> To receive information on future offers and promotions, please check the box alongside.
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-12" align="center">
+         	<input type="submit" name="register " value="Register" class="regbtn">
+        </div>
+    </div>
+    
+  </form>
+    </div>
+    </div>
+    
+    <div class="footer">
+       <div class="bg">
+     	<div class="container">
+           		<div class="row">
+                <div class="col-lg-4">
+                 <i class="fa fa-envelope fa-2x" style="color:#b8d3de;"> Free Appointment</i><br>
+                 <h1 style="color:#FFF; margin-left: 62px;">APPOINTMENT</h1>
+                </div>
+                <div class="col-lg-4">
+                 <i class="fa fa-phone fa-2x" style="color:#b8d3de;"> 24 HR Helpline</i><br>
+                 <h1 style="color:#FFF;margin-left: 62px;">070 567 27277</h1>
+                </div>
+                <div class="col-lg-4">
+                 <i class="fa fa-tags fa-2x" style="color:#b8d3de;">View Our</i><br>
+                 <h1  style="color:#FFF; margin-left: 119px;">TOP OFFERS</h1>
+                 </div>
+                </div>
+                <div class="row">
+                 <div class="col-md-2">
+                 <h3 style="color:#b8d3de; text-align: left;">Repair Guides</h3>
+                 <p align="left" style="color:#FFF;">Engine</p>
+                 <p align="left" style="color:#FFF;">Transmission</p>
+                 
+                 </div>
+                 <div class="col-md-2">
+                 <h3 style="color:#b8d3de;    text-align: left;">Services</h3>
+                 <p align="left" style="color:#FFF;">Oil Services</p>
+                 <p align="left" style="color:#FFF;">Repairing</p>
+                 <p align="left" style="color:#FFF;">Diagnostic</p>
+                 <p align="left" style="color:#FFF;">Body Work</p>
+                 <p align="left" style="color:#FFF;">Change Tyres</p>
+                 <p align="left" style="color:#FFF;">Change Battery</p>
+                 <p align="left" style="color:#FFF;">Buy Accessories</p>
+                 <p align="left" style="color:#FFF;">Top Offers</p>
+                 </div>
+                 <div class="col-md-2">
+                 <h3 style="color:#b8d3de;    text-align: left;">General</h3>
+                 <p align="left" style="color:#FFF;">How It Works</p>
+                 <p align="left" style="color:#FFF;">About Us</p>
+                 <p align="left" style="color:#FFF;">Car Warranty</p>
+                 <p align="left" style="color:#FFF;">Fees and Charges</p>
+                 <p align="left" style="color:#FFF;">Contact Us</p>
+                 <p align="left" style="color:#FFF;">Privacy Policy</p>
+                 <p align="left" style="color:#FFF;">FAQ</p>
+                 </div>
+                 <div class="col-md-3">
+                 <h3 style="color:#b8d3de;    text-align: left;">For Car Owner</h3>
+                 <p align="left" style="color:#FFF;">My Account</p>
+                 <p align="left" style="color:#FFF;">Sign Up</p>
+                 <p align="left" style="color:#FFF;">Terms and Conditions</p>
+                 <p align="left" style="color:#FFF;">Get Estimate</p>
+                 <p align="left" style="color:#FFF;">Search Workshop</p>
+                 <p align="left" style="color:#FFF;">Book Appointment</p>
+                 <p align="left" style="color:#FFF;">Write a Review</p>
+                 </div>
+                 <div class="col-md-3">
+                 <h3 style="color:#b8d3de;    text-align: left;">For Workshops</h3>
+                 <p align="left" style="color:#FFF;">Login</p>
+                 <p align="left" style="color:#FFF;">List Your Business</p>
+                 <p align="left" style="color:#FFF;">Terms and Conditions</p>
+                 <p align="left" style="color:#FFF;">Pricing</p>
+                 <p align="left" style="color:#FFF;">FAQ</p>
+                 </div>
+             	</div>
+        </div>
+   </div>
+    
+   	   <div class="col-lg-6 copy" align="left">
+		       <p>© 2016 AutoXperts India Pvt. Ltd.</p>
+	        </div>
+       <div class="col-lg-6 copy">
+		       <p align="right">STAY CONNECTED WITH US :<i class="fa fa-facebook fa-1x"></i> &nbsp; <i class="fa fa-twitter fa-1x"></i>&nbsp; <i class="fa fa-youtube fa-1x"></i>&nbsp; <i class="fa fa-search fa-1x"></i></p>
+	        </div>
+   </div>
+   		
+   
+<script src="js/jquery.countdown.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>	
